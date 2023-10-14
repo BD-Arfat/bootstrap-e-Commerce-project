@@ -49,10 +49,9 @@ p{
 }
 
 
-
 /* Navigation CSS */ 
 #header .fixed-top{
-    box-shadow: 0 0.125rem 0.675rem #F79BDA;
+    box-shadow: 0 0.125rem 0.675rem rgb(0 0 0 / 5%);
 }
 #header .navbar-nav .nav-item .nav-link{
     color:var(--text-black);
@@ -70,7 +69,6 @@ p{
 #header .navbar-toggler:focus{
     box-shadow: none;
 }
-
 
 
 /* Home CSS */  
