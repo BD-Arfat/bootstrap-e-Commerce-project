@@ -309,5 +309,172 @@ p{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
-    
+
+}
+
+/* Special CSS */
+
+.special{
+    padding:6rem 0;
+    background:var(--bg-light-white);
+}
+.special .countdown-container{
+    padding-top:4.375rem;
+}
+.special .countdown-container p{
+    color:var(--text-dark-gray);
+    font-weight: 300;
+    line-height: 1.875rem;
+}
+.special .countdown-container .countdown-counter{
+    display:block;
+    width:100%;
+    margin:0;
+    padding:0;
+    margin-bottom:1.875rem;
+}
+.special .countdown-container .countdown-counter li{
+    display:inline-block;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-align: center;
+    background:var(--bg-white);
+    border-radius: 0.313rem;
+    padding:2rem 1rem;
+    width:15%;
+    margin: 0 0.313rem;
+}
+.special .countdown-container .countdown-counter span{
+    font-weight: 500;
+
+}
+.special .countdown-container .countdown-price del{
+    color: var(--text-gray);
+    font-size: 1rem;
+}
+
+.special .special-img span{
+    background: var(--bg-danger);
+    border-radius: 0.313rem;
+    color: var(--text-white);
+    font-size: 0.813rem;
+    letter-spacing: 0.25rem;
+    line-height: 1.563rem;
+    padding: 0.125rem 0.813rem;
+    text-transform: uppercase;
+    position: absolute;
+    left: 1rem;
+    top: 1.188rem;
+    z-index: 99;
+}
+
+
+
+
+
+
+
+
+@media (max-width:1030px){
+    /* Home CSS */ 
+    .home .home-banner-1,
+    .home .home-banner-2{
+        background-position: 65% center;
+        min-height: 550px;
+    }
+    .home .home-banner .home-banner-text{
+        transform: translate(-80%, -50%);
+    }
+
+    /* Offer CSS */
+    .offers .offer-box .offer-info .heading-bigger{
+        font-size: 3rem;
+    }
+
+    /* Special CSS */
+    .special .countdown-container .countdown-counter li{
+        padding:1.5rem 1rem;
+    }
+      
+}
+@media (max-width:991px){
+    /* Home CSS */ 
+    .home .home-banner .home-banner-text{
+        transform: translate(-66%, -50%)
+    }
+
+    /* Special CSS */ 
+    .special .countdown-container{
+        padding-top:1rem;
+        padding-bottom:5rem;
+    }
+
+    /* Testimonial CSS */ 
+    .testimonial .carousel-control-prev{
+        left:-1.75rem;
+    }
+    .testimonial .carousel-control-next{
+        right:-1.75rem;
+    }
+     
+}
+@media (max-width:767px){ 
+     /* Home CSS */ 
+     .home .home-banner-1,
+     .home .home-banner-2{
+         background-position:50% center;
+         min-height: 450px;
+     }
+     .home .home-banner .home-banner-text{
+         text-align: center;
+         width:100%;
+         transform:translate(-50%, -50%);
+     }
+     .home .home-banner .home-banner-text h1{
+         font-size: 3rem;
+     }
+     .home .home-banner .home-banner-text h2{
+         font-size: 1.2rem;
+     }
+     .home .home-banner .home-banner-text .btn-danger{
+         padding:0.5rem 1.5rem;
+     }
+     .home .slider-icon{
+         font-size: 2rem;
+     } 
+
+     /* Product CSS */ 
+     .products .up_to_content h2{
+         font-size: 0.75rem;
+     }
+
+     /* Special CSS */ 
+     .special{
+         padding:4rem 0;
+     }
+     .special .countdown-container .countdown-counter li{
+         padding:1rem;
+         width:20%;
+     }
+
+     /* Testimonial CSS */ 
+     .testimonial .testimonial-wrapper{
+         padding:1rem;
+     }
+    .testimonial .carousel-control-prev,
+    .testimonial .carousel-control-next{
+        display:none;
+    }
+}
+
+@media (max-width:330px){ 
+    /* Home CSS */ 
+    .home .home-banner .home-banner-text h2{
+        font-size: 1rem;
+    }
+
+    /* Product CSS */ 
+    .products .up_to_content h2{
+        font-size: 0.625rem;
+    }
 }
